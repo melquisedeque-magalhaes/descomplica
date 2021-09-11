@@ -16,7 +16,7 @@ import { StudentsModule } from './students/students.module'
         ),
         GraphQLModule.forRoot({
             cors: {
-                origin: process.env.FRONTEND_URL,
+                origin: process.env.FRONTEND_URL || process.env.FRONTEND_URL_PRODUCTION,
                 credentials: true,
             },
             autoSchemaFile: join(process.cwd(), 'src/ShemasGraphQl/schema.gql'),
