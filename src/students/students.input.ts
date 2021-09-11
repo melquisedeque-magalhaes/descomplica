@@ -1,9 +1,8 @@
 import { Field, InputType } from '@nestjs/graphql';
-import { Schema as MongooseSchema } from 'mongoose'
+import { Schema as MongooseSchema } from 'mongoose';
 
 @InputType()
 export class CreateStudentsInput {
-
     @Field(() => String)
     name: string;
 
@@ -16,7 +15,6 @@ export class CreateStudentsInput {
 
 @InputType()
 export class ListStudentInput {
-
     @Field(() => String, { nullable: true })
     _id?: MongooseSchema.Types.ObjectId;
 

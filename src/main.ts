@@ -1,11 +1,10 @@
 import { NestFactory } from '@nestjs/core';
 
-
-import { StudentsModule } from './students/students.module';
+import { AppModule } from './app.module';
 
 async function bootstrap() {
-  const app = await NestFactory.create(StudentsModule);
-  app.enableCors()
+  const app = await NestFactory.create(AppModule);
+  app.enableCors();
 
   await app.listen(3333);
 }
