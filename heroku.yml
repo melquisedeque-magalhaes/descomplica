@@ -1,5 +1,0 @@
-build:
-  docker:
-    web: docker-compose.yaml
-run:
-  web: npm run start
