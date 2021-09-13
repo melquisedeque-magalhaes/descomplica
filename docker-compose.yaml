@@ -8,4 +8,10 @@ services:
     ports:
       - 3333:3333
     volumes: 
-      - .:home/node/app
+      - .:/home/node/app
+    environment:
+      - DATABASE_MONGOOSE_USER=melqui
+      - DATABASE_MONGOOSE_PASSWORD=10203010
+      - DATABASE_MONGOOSE_NAME=students
+      - FRONTEND_URL=http://localhost:3000
+      - FRONTEND_URL_PRODUCTION=https://descomplica-web.vercel.app

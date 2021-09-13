@@ -23,6 +23,7 @@ import { StudentsModule } from './students/students.module'
             sortSchema: true,
             playground: true,
             debug: false,
+            introspection: true,
         }),
 
         StudentsModule
