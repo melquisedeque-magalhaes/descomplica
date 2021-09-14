@@ -24,7 +24,7 @@
 
 ## Aplicação
 
-[Aplicação](https://descomplicaapi2.herokuapp.com/graphql)
+[Aplicação em Produção](https://descomplicaapi2.herokuapp.com/graphql)
 
 ## Installation
 
